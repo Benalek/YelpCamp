@@ -16,11 +16,10 @@ var commentRoutes = require("./routes/comments"),
     campgroundRoutes  = require("./routes/campgrounds"),
     indexRoutes        = require("./routes/index")
 
-console.log();
-
-mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb://cantuga:fa16i15le@ds157112.mlab.com:57112/yelpcamp");
-
+// backup in case something went wrong with the enviroment
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
+mongoose.connect(url);
+// enviroment variable setted both on c9 and on heroku dashboard
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
