@@ -3,4 +3,4 @@ Yelp Camp is a fully functional site to record and share reviews of camping site
 
 It's a NodeJS APP applying REST scheme, using Mongoose MongoDB as database, Passport for authentication. 
 
-Originally hosted on Heroku: https://shielded-ravine-42146.herokuapp.com/
+Originally hosted on Heroku.
